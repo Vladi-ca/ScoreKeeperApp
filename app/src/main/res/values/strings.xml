@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name_a">"TEAM A"</string>
+    <string name="zero_a">"0"</string>
+    <string name="goalbutton">"GOAL !"</string>
+    <string name="plus">"+"</string>
+    <string name="zero">"0"</string>
+    <string name="reset">"RESET"</string>
+    <string name="name_b">"TEAM B"</string>
+    <string name="reset_all">"Reset ALL"</string>
+    <string name="chronometer_format">%s</string>
+</resources>

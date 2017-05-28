@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/light_green</item>
+    </style>
+
+    <style name="ResetButton" >
+        <!-- Smaller reset button properties. -->
+        <item name="android:layout_width">@dimen/reset_width</item>
+        <item name="android:layout_height">@dimen/card_dimen</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/reset_button</item>
+        <item name="android:text">@string/reset</item>
+        <item name="android:textColor">@color/reset_button</item>
+    </style>
+
+    <style name="GoalButton">
+        <!-- Goal button properties. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/goal_button</item>
+        <item name="android:text">@string/goalbutton</item>
+        <item name="android:textColor">@color/goalbutton</item>
+        <item name="android:textSize">@dimen/goal_text</item>
+    </style>
+
+    <style name="HorizontalSeparator">
+        <!-- Horizontal separator properties. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/separator_height</item>
+        <item name="android:layout_margin">@dimen/separator_margin</item>
+        <item name="android:background">@color/view</item>
+    </style>
+
+    <style name="TeamImage">
+        <!-- Image of a team. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_weight">50</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="HorizontalLinearLayoutCards">
+        <!-- Hor.Lin.Lay. where is yellow or red card info. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PlusButton">
+        <!-- Goal button properties. -->
+        <item name="android:layout_width">@dimen/card_dimen</item>
+        <item name="android:layout_height">@dimen/card_dimen</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:text">@string/plus</item>
+        <item name="android:textColor">@color/mini_button_text</item>
+        <item name="android:textSize">@dimen/plus_size</item>
+    </style>
+
+    <style name="CardNumber">
+        <!-- Number of yellow or red cards properties. -->
+        <item name="android:layout_width">@dimen/zero_dimen</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:text">@string/zero</item>
+        <item name="android:textColor">@color/light_green</item>
+        <item name="android:textSize">@dimen/card_number</item>
+        <item name="android:layout_marginLeft">@dimen/card_number_marginLeft</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+</resources>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grass"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:scaleType="centerCrop">
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/stop_button"
+                android:layout_width="@dimen/chronometer_layout_width"
+                android:layout_height="@dimen/chronometer_layout_height"
+                android:background="@drawable/stop" />
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="@dimen/chronometer_layout_width"
+                android:layout_height="@dimen/chronometer_layout_height"
+                android:layout_marginLeft="@dimen/start_button_layout_marginLeft"
+                android:layout_marginRight="@dimen/start_button_layout_marginRight"
+                android:background="@drawable/play" />
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="@dimen/chronometer_layout_width"
+                android:layout_height="@dimen/chronometer_layout_height"
+                android:background="@drawable/reset"
+                android:onClick="resetnow" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/start_button_layout_marginLeft"
+                android:layout_marginTop="@dimen/chronometer_layout_marginTop"
+                android:format="@string/chronometer_format"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/chronometer_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalSeparator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dimen"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero_dimen"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_dimen"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="@dimen/zero_dimen"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false">
+
+                        <ImageView
+                            android:layout_width="@dimen/xlarge_image_width"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_one" />
+
+                        <ImageView
+                            android:layout_width="@dimen/xlarge_image_width"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_two" />
+
+                        <ImageView
+                            android:layout_width="@dimen/xlarge_image_width"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_three" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="@dimen/zero_dimen"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:text="@string/zero_a"
+                    android:textColor="@color/zero_a"
+                    android:textSize="@dimen/xlarge_textSize_goals" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/name_a"
+                android:paddingTop="@dimen/team_name_padding_top"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/xlarge_team_name" />
+
+            <Button
+                android:id="@+id/GoalTeamA"
+                style="@style/GoalButton"
+                android:layout_marginBottom="@dimen/goal_marginBottom"
+                android:layout_weight="1" />
+
+            <LinearLayout style="@style/HorizontalLinearLayoutCards">
+
+                <Button
+                    android:id="@+id/YellowTeamA"
+                    style="@style/PlusButton"
+                    android:background="@drawable/custom_button_yellow" />
+
+                <TextView
+                    android:id="@+id/team_a_yellow"
+                    style="@style/CardNumber"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/ResetYellowA"
+                    style="@style/ResetButton" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalSeparator" />
+
+            <LinearLayout style="@style/HorizontalLinearLayoutCards">
+
+                <Button
+                    android:id="@+id/RedTeamA"
+                    style="@style/PlusButton"
+                    android:background="@drawable/custom_button" />
+
+                <TextView
+                    android:id="@+id/team_a_red"
+                    style="@style/CardNumber"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/ResetRedA"
+                    style="@style/ResetButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/width_verticalSeparator"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_verticalSeparator"
+            android:background="@color/view" />
+
+        <LinearLayout
+            android:layout_width="@dimen/zero_dimen"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero_dimen"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="@dimen/zero_dimen"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left"
+                    android:text="@string/zero_a"
+                    android:textColor="@color/light_green"
+                    android:textSize="@dimen/xlarge_textSize_goals" />
+
+                <HorizontalScrollView
+                    android:layout_width="@dimen/zero_dimen"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false">
+
+                        <ImageView
+                            android:layout_width="@dimen/xlarge_image_width"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_one" />
+
+                        <ImageView
+                            android:layout_width="@dimen/xlarge_image_width"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_two" />
+
+                        <ImageView
+                            android:layout_width="@dimen/xlarge_image_width"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_three" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/name_b"
+                android:paddingTop="@dimen/team_name_padding_top"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/xlarge_team_name" />
+
+            <Button
+                android:id="@+id/GoalTeamB"
+                style="@style/GoalButton"
+                android:layout_marginBottom="@dimen/goal_marginBottom"
+                android:layout_weight="1" />
+
+            <LinearLayout style="@style/HorizontalLinearLayoutCards">
+
+                <Button
+                    android:id="@+id/YellowTeamB"
+                    style="@style/PlusButton"
+                    android:background="@drawable/custom_button_yellow" />
+
+                <TextView
+                    android:id="@+id/team_b_yellow"
+                    style="@style/CardNumber"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/ResetYellowB"
+                    style="@style/ResetButton" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalSeparator" />
+
+            <LinearLayout style="@style/HorizontalLinearLayoutCards">
+
+                <Button
+                    android:id="@+id/RedTeamB"
+                    style="@style/PlusButton"
+                    android:background="@drawable/custom_button" />
+
+                <TextView
+                    android:id="@+id/team_b_red"
+                    style="@style/CardNumber"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/ResetRedB"
+                    style="@style/ResetButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ResetAll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/resetAll_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/resetAll_marginBottom"
+        android:layout_marginTop="@dimen/resetAll_marginTop"
+        android:background="@drawable/reset_button"
+        android:text="@string/reset_all"
+        android:textColor="@color/light_green" />
+
+</LinearLayout>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#006064</color>
+    <color name="colorPrimaryDark">#006064</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="team_a">#B9F6CA</color>
+    <color name="zero_a">#B9F6CA</color>
+    <color name="goalbutton">#006064</color>
+    <color name="reset_button">#B9F6CA</color>
+    <color name="mini_button_text">#ffffff</color>
+    <color name="light_green">#B9F6CA</color>
+    <color name="view">#006064</color>
+</resources>
